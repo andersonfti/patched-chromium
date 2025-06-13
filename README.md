@@ -31,19 +31,6 @@ Comandos de personalização
 | **`--timezone`**                         | Fuso horário                                                                           | Fuso horário (ex: `America/Sao_Paulo`, `UTC`)                            |
 | **`--proxy-server`**                     | Servidor proxy                                                                         | Proxy `http`, `socks` (autenticação por senha não suportada)             |
 
-### **Novos Argumentos de Linha de Comando para Personalização do User-Agent**
-
-O Chrome 131 introduz dois novos argumentos de linha de comando para personalização avançada do `User-Agent` e `User-Agent Data`:
-
-- **`--fingerprint-brand`**
-  - Especifica a marca do navegador usada no `User-Agent` e `User-Agent Data`.
-  - Valores suportados: `Chrome`, `Edge`, `Opera`, `Vivaldi`, ou nomes de marcas personalizados.
-
-- **`--fingerprint-brand-version`**
-  - Especifica o número da versão para a marca especificada.
-  - Valores padrão: `Chrome`, `Edge`, `Opera`, `Vivaldi` todos fornecem versões padrão, versões personalizadas também podem ser passadas.
-
-Estes argumentos aprimoram as capacidades de simulação de ambiente do navegador, adequados para automação e cenários de teste. Se `--fingerprint-brand` não for especificado, a marca padrão será usada.
 
 ## Exemplos de Uso
 
@@ -51,12 +38,8 @@ Aqui estão exemplos de linha de comando para vários casos de uso comuns:
 
 ### Uso Básico
 
-```bash
-./chrome --fingerprint=1000 --user-data-dir=/tmp/chromium/1000 --timezone="America/Sao_Paulo" --proxy-server="seu_endereco_de_servidor_proxy"
-```
-
-### Personalizando o User-Agent
+#### Sempre criar um novo data-dir quando inicializar o browser, para garantir que será uma nova sessão.
 
 ```bash
-chrome.exe --fingerprint=2023 --fingerprint-platform=macos --fingerprint-platform-version="15.2.0" --fingerprint-brand="Edge"  --user-data-dir=%TEMP%\chromium
+./chrome --fingerprint=1000 --user-data-dir=/tmp/chromium/1000 --timezone="America/Sao_Paulo"  --fingerprint-platform=windows
 ```
