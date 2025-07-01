@@ -6,10 +6,7 @@
 
 | **Version**    | **Linux**                                                                                                                                                             |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Chrome 136** | [136.0.7103.113-1_linux.tar.xz](https://drive.google.com/file/d/1ae0IcbnG-8Sjm0Dz7sbqKeiVqoi1t_5M/view?usp=drive_link)   |
-| **Chrome 135** | [135.0.7049.95-1_linux.tar.xz](https://drive.google.com/file/d/1vefFDpkouE6mQxkQSIHu_VNi5jg_2_7r/view?usp=drive_link)      |
-| **Chrome 134** | [134.0.6998.165-1_linux.tar.xz](https://drive.google.com/file/d/1uXvPxFBcsINqGzTHjMfP27ADBYLb1luI/view?usp=sharing) |
-
+| **Chrome 136** | [patched-chromium_136.tar.xz](https://drive.google.com/file/d/13EFi2tnJhYf8aJhMB3VC1sBQHCAx-A-u/view?usp=sharing)   |
 
 ---
 
